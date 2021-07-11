@@ -1,0 +1,109 @@
+.updates_layout {
+    padding: 24px 24px;
+    background: #23001E;
+    width: 100%;
+    height: 100vh;
+}
+
+.updates_container {
+    display: flex;
+}
+
+.updates_title {
+    width: 100%;
+    text-align: center;
+    user-select: none;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.updates_oops {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    user-select: none;
+}
+
+.updates_oops h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.start_here{
+    margin: 12px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #20A39E;
+    font-size: 10px;
+    border-radius: 18px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.start_link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logout_btn {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    margin: 12px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #43AA8B;
+    font-size: 18px;
+    border-radius: 18px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.journal_btn2 {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    margin-right: 10px;
+    margin-top: 64px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #6B0F1A;
+    font-size: 18px;
+    border-radius: 18px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.journals_ulink {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logout_btn:hover, .journal_btn2:hover {
+    transform: scale(1.1);
+}

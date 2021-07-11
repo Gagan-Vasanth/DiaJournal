@@ -1,0 +1,157 @@
+.login_layout {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   background-color: #4A2040;
+   overflow: hidden; 
+}
+
+.login_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.l_form {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.login_title {
+    font-size: 4rem;
+    animation: title 10s ease-in-out infinite;
+    text-align: center;
+   user-select: none;
+   text-transform: uppercase;                         
+}
+
+@keyframes title {
+    0% {
+        color: #EC9DED;
+    }
+    10% {
+        color: #DBAD6A;
+    }
+    20% {
+        color: #1B98E0;
+    }
+    30% {
+        color: #EF3E36;
+    }
+    40% {
+        color: #DDD92A;
+    }
+    50% {
+        color: #840032;
+    }
+    60% {
+        color: #02040F;
+    }
+    70% {
+        color: #E59500;
+    }
+    80% {
+        color: #EEC170;
+    }
+    90% {
+        color: #639FAB;
+    } 
+    100% {
+        color: #FFFFFF;
+    }
+
+}
+
+.login_text {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+   user-select: none;
+   text-transform: uppercase;                         
+}
+
+.login_form {
+    margin-top: 1rem;
+}
+
+.login_mail,.login_pass {
+    width: 340px;
+    height: 54px;
+    border-radius: 24px;
+    padding-left: 20px;
+    transition: all .2s;
+    margin: 12px;
+    display: block;
+    margin: 1rem;
+    border: none;
+    text-decoration: none;
+}
+
+.login_mail:focus,.login_pass:focus{
+    outline: none;
+    transform: scale(1.1);
+}
+
+.login_btn_enabled {
+   margin-top: 2rem;
+   display: block;
+   margin-left: 5%;
+   margin-bottom: 2%;
+   width: 90%;
+   border: none;
+   height: 44px;
+   border-radius: 24px;
+   background-color: #4CAF50;
+   color: #FFFFFF;
+   font-size: 24px;
+   transition: all .2s;
+   cursor: pointer;
+   letter-spacing: 2px;
+   user-select: none;
+   text-transform: uppercase;
+}
+
+.login_btn_enabled:hover {
+    transform: scale(1.1);
+}
+
+.login_btn_disabled {
+   visibility: hidden;
+}
+
+.login_signup {
+    color: #FFFFFF;
+    margin-top: 4%;
+    margin-left: 14%;
+    user-select: none;
+}
+
+.signin_link {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all .2s;
+}
+
+.signin_link:hover {
+    letter-spacing: 3px;
+}
+
+.login_btn_enabled:focus {
+    outline: none;
+    transform: scale(1.1);
+}
+
+.error {
+    color: salmon;
+    font-size: 24px;
+}

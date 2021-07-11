@@ -1,0 +1,156 @@
+.signin_layout {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4A2040;
+    overflow: auto; 
+ }
+ 
+ .signin_container {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+ }
+ 
+ .s_form {
+     display: flex;
+     height: 100%;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ } 
+ 
+ .signin_title {
+    font-size: 4rem;
+    text-align: center;
+    animation: title 10s ease-in-out infinite;
+    user-select: none; 
+    text-transform: uppercase;                       
+ }
+ 
+ @keyframes title {
+     0% {
+         color: #EC9DED;
+     }
+     10% {
+         color: #DBAD6A;
+     }
+     20% {
+         color: #1B98E0;
+     }
+     30% {
+         color: #EF3E36;
+     }
+     40% {
+         color: #DDD92A;
+     }
+     50% {
+         color: #840032;
+     }
+     60% {
+         color: #02040F;
+     }
+     70% {
+         color: #E59500;
+     }
+     80% {
+         color: #EEC170;
+     }
+     90% {
+         color: #639FAB;
+     } 
+     100% {
+         color: #FFFFFF;
+     }
+ 
+ }
+ 
+ .signin_text {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    user-select: none;
+    text-transform: uppercase;                       
+ }
+ 
+ .signin_form {
+     margin-top: 1rem;
+ }
+
+ .signin_mail,.signin_pass, .signin_name {
+    width: 340px;
+    height: 54px;
+    border-radius: 24px;
+    padding-left: 20px;
+    transition: all .2s;
+    margin: 12px;
+    display: block;
+    margin: 1rem;
+    border: none;
+    text-decoration: none;
+}
+
+.signin_mail:focus,.signin_pass:focus, .signin_name:focus{
+    outline: none;
+    transform: scale(1.1);
+}
+
+.signin_btn_enabled {
+    margin-top: 2rem;
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 90%;
+    border: none;
+    height: 44px;
+    border-radius: 24px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    font-size: 24px;
+    transition: all .2s;
+    cursor: pointer;
+    letter-spacing: 2px;
+    user-select: none;
+    text-transform: uppercase;
+}
+ 
+.signin_btn_enabled:hover {
+    transform: scale(1.1);
+}
+
+.signin_btn_disabled {
+visibility: hidden;
+}
+
+.signin_login {
+    color: #FFFFFF;
+    margin-top: 4%;
+    margin-left: 14%;
+    user-select: none;
+}
+
+.login_link {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all .2s;
+}
+
+.login_link:hover {
+    letter-spacing: 3px;
+}
+
+.signin_btn_enabled:focus {
+    outline: none;
+    transform: scale(1.1);
+}
+
+.signup_error {
+    color: salmon;
+}

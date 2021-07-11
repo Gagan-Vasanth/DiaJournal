@@ -1,0 +1,76 @@
+.spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1.5rem;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+}
+
+h2 {
+  color: #09d56e;
+  position: relative;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  left: auto;
+  right: auto;
+}
+
+h2::after {
+  content: '';
+  font-size: 3rem;
+  -webkit-animation: dots 2s infinite forwards;
+          animation: dots 2s infinite forwards;
+}
+
+@-webkit-keyframes dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '...';
+  }
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '...';
+  }
+}
+/*# sourceMappingURL=Loader.css.map */

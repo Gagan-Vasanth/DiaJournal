@@ -1,0 +1,38 @@
+.card_container {
+    display: flex;
+    margin-top: 70px;
+    border: 2px solid white;
+    flex-direction: column;
+    width: 550px;
+    height: 450px;
+    overflow: auto;
+    align-items: center;
+    border-radius: 24px;
+    background: white;
+    transition: all .2s;
+}
+
+.card_date {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+   
+}
+
+.card_date, .card_body {
+    cursor: none;
+    animation: cometome 1s ease-in-out;
+}
+
+@keyframes cometome {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card_container:hover {
+    transform: scale(1.1);
+}

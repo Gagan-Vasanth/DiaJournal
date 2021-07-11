@@ -1,0 +1,110 @@
+.journal_layout {
+    display: flex;
+    background: #0D0221;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.journal_editor {
+    width: 600px;
+    height: 750px;
+    margin-top: 40px;
+    padding: 18px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.journal_editor::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.journal_editor::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+.journal_editor::-webkit-scrollbar-thumb
+{
+	background-color: #333232;
+	border: 2px solid #555555;
+}
+
+.journal_btn {
+    position: absolute;
+    bottom: 12px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #FF6F59;
+    font-size: 24px;
+    border-radius: 18px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.journal_heading {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 44px;
+    user-select: none;
+}
+
+.journal_btn1 {
+    position: absolute;
+    right: 20px;
+    margin: 12px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #43AA8B;
+    font-size: 18px;
+    border-radius: 18px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.journal_btn:hover, .journal_btn1:hover, .journal_btn2:hover {
+    transform: scale(1.1);
+}
+
+.journal_btn2 {
+    position: absolute;
+    right: 20px;
+    margin-right: 10px;
+    margin-top: 64px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #6B0F1A;
+    font-size: 18px;
+    border-radius: 18px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.journals_ulink {
+    text-decoration: none;
+    color: #FFFFFF;
+}
